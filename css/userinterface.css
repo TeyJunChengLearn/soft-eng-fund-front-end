@@ -1,0 +1,388 @@
+.user-sidebar{
+    display: flex;
+    width: 380px;
+    height: 1065px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #818181;
+}
+
+.user-sidebar-top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    align-self: stretch;
+}
+
+.user-sidebar-logout{
+    display: flex;
+    padding: 12px 133px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #000;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user-sidebar-logo{
+    width: 123px;
+    height: 158.257px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-sidebar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.user-sidebar-list-item-notselected{
+    display: flex;
+    width: 380px;
+    padding: 0px 144px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-top: 4px dashed #F7F7F7;
+    border-bottom: 4px dashed #F7F7F7;
+    background: #818181;
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) if text overflows */
+    text-align: center;
+}
+
+.user-sidebar-list-item-selected{
+    display: flex;
+    width: 380px;
+    padding: 0px 144px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-top: 4px dashed #F7F7F7;
+    border-bottom: 4px dashed #F7F7F7;
+    background: #F7F7F7;
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) if text overflows */
+    text-align: center;
+}
+
+.user-main{
+    display: flex;
+    width: 1540px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-main-pagetitle-container{
+    display: flex;
+    height:80px;
+    padding: 3px 0px 4px 30px;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    background: #FFF;
+}
+
+.user-main-pagetitle-text{
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide any overflowing text */
+    /* text-overflow: ellipsis; Add ellipsis (...) if text overflows */
+    text-align: center;
+}
+
+.user-main-content {
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    height: 985px; /* Adjust height based on viewport minus header height */
+    justify-content: C;
+    align-self: stretch;
+    background: #F7F7F7;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    gap: 10px; /* Add spacing between child elements */
+    align-items: center;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.user-main-content-21rowtable{
+    width: 100%; /* Dynamically adjust to container width */
+    table-layout: auto; /* Allow column widths to adjust based on content */
+    border-collapse: collapse;
+}
+
+.user-main-content-21rowtable-tablehead{
+    color: #F7F7F7;
+    font-size: 23.118px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 30.053px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #818181;
+    table-layout: auto;
+}
+.user-main-content-21rowtable-tablehead th{
+   width: 100%;
+   border: 0.462px solid #000;
+   text-align: center;
+   table-layout: auto;
+}
+
+.user-main-content-21rowtable-tabledata{
+    color: #000;
+    font-size: 18.494px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    table-layout: auto;
+}
+
+.user-main-content-21rowtable-tabledata td{
+    width: 100%;
+    height: 37.99px;
+    border: 0.462px solid #000;
+    border-left: 0.462;
+    border-right: 0.462;
+    border-bottom: 0.462;
+    padding: 5px;
+    table-layout: auto;
+    word-wrap: break-word;
+}
+
+.user-main-content-21rowtable-tablehead th,
+.user-main-content-21rowtable-tabledata td {
+    text-align: center; /* Center-align text */
+    white-space: nowrap; /* Prevent breaking words unless necessary */
+    overflow: hidden; /* Hide overflow if content is too long */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed content */
+}
+
+.user-main-content-searchbar-input{
+    display: flex;
+    padding: 10px 10px 10px 15px;
+    align-items: center;
+    align-self: stretch;
+    color: #F7F7F7;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 350;
+    /* line-height: 100%; */
+    background-color: #818181;
+    border:none !important;
+    width: 574px;
+    height:45px;
+    border-radius: 22px;
+    background: #868686;
+}
+
+.user-main-content-searchbar-input::placeholder{
+    color: #F7F7F7;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 350;
+    /* line-height: 100%; */
+
+}
+
+.user-main-content-searchbar-input:focus{
+    border: none !important;;
+}
+
+.user-main-content-searchbar-container-for-21rowtable{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-main-content-create-button{
+    display: flex;
+    padding: 10px 39px 10px 40px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    color: #F7F7F7;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    background-color: #818181;
+    border-radius: 22px;
+}
+
+.admin-manageuserlsit-21rowtable th:nth-child(1),
+.admin-manageuserlsit-21rowtable td:nth-child(1) {
+    width: 35%; /* Email column takes 25% of the table width */
+}
+
+.admin-manageuserlsit-21rowtable th:nth-child(2),
+.admin-manageuserlsit-21rowtable td:nth-child(2) {
+    width: 20%; /* Username column takes 20% */
+}
+
+.admin-manageuserlsit-21rowtable th:nth-child(3),
+.admin-manageuserlsit-21rowtable td:nth-child(3) {
+    width: 15%; /* Role column takes 15% */
+}
+
+.admin-manageuserlsit-21rowtable th:nth-child(4),
+.admin-manageuserlsit-21rowtable td:nth-child(4) {
+    width: 20%; /* Last Updated On column takes 30% */
+}
+
+.admin-manageuserlsit-21rowtable th:nth-child(5),
+.admin-manageuserlsit-21rowtable td:nth-child(5) {
+    width: 10%; /* Action column takes 10% */
+}
+
+.user-main-content-Longform-form{
+    width:100%;
+    height: auto;
+    background-color: #818181;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-main-content-Longform-form {
+    width: 100%;               /* Full width of the container */
+    height: auto;
+    padding: 20px;             /* Add padding for spacing */
+    gap: 10px;                 /* Space between elements */
+    box-sizing: border-box;    /* Include padding in height calculation */
+    overflow: visible;         /* Ensure content isn't clipped */
+}
+
+.user-main-content-standardform-form{
+    width:100%;
+    height: 100%;
+    background-color: #818181;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.usermain-content-standardform-form-input-container{
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.user-main-content-standardform-form-row{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.user-main-content-standardform-form-column{
+    margin-top: 45px;
+    margin-left: 15px;
+    width:90%;
+    background-color: #818181;
+}
+
+.user-main-content-standardform-form-label{
+    height:50px;
+    font-size:40px;
+    margin-bottom: 10px;
+}
+
+.user-main-content-standardform-form-input,
+.user-main-content-standardform-form-input::placeholder{
+    width:90%;
+    font-size: 50px;
+    height:60px;
+    color:#000;
+    background-color: #F7F7F7;
+}
+.user-main-content-standardform-form-button-container-row{
+    width: 100%;
+    height:52px;
+    background-color: #818181;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.user-main-content-standardform-form-button-container-column{
+    width:15%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+
+.user-main-content-standardform-button{
+    display:flex;
+    justify-content: center;
+    justify-items:center;
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%
+}
+.user-main-content-standardform-button a{
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    resize: none;              /* Disable manual resizing */
+    overflow: hidden;          /* Prevent scrollbars inside the textarea */
+    font-size: 50px;           /* Set font size */
+    line-height: 1.2;
+    background-color: #f7f7f7; /* Set background color */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;    /* Include padding in dimensions */
+    min-height: calc(1.5em * 5); /* Minimum height of 5 rows */
+}
+.user-main-content-Longform-form-textarea-container{
+    width:98%;
+}
+
+.user-main-content-Longform-form-input-container{
+    justify-items: center;
+}
