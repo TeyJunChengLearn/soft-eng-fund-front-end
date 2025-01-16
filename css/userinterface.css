@@ -14,35 +14,48 @@ html, body {
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
 }
-
 /* Sidebar */
 .user-sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%; /* Adjusts relative to screen size */
-    min-width: 200px; /* Ensure minimum sidebar width */
-    max-width: 380px; /* Ensure maximum sidebar width */
-    height: 100%;
+    width: 25%; /* Adjust width relative to screen size */
+    max-width: 300px; /* Ensure a minimum width */
+    height: 100vh; /* Full viewport height */
     background: #818181;
+
 }
 
+/* Scale content dynamically */
 .user-sidebar-top-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 20px;
+    flex: 1; /* Allow it to stretch or shrink as needed */
+    overflow: hidden; /* Prevent overflow from creating scrollbars */
 }
 
+/* Sidebar List */
+.user-sidebar-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1; /* Allow list items to shrink or grow */
+}
+
+/* Sidebar Logout */
 .user-sidebar-logout {
     padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     background: #000;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+/* Sidebar Logo */
 .user-sidebar-logo {
     width: 100%; /* Make the image take full width of its container */
     max-width: 150px; /* Limit the maximum width */
@@ -52,22 +65,16 @@ html, body {
 }
 
 /* Sidebar List Items */
-.user-sidebar-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .user-sidebar-list-item-notselected,
 .user-sidebar-list-item-selected {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.8rem;
-    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-size: 1rem; /* Adjust font size for better scaling */
     color: #000;
-    border-top: 2px dashed #f7f7f7;
-    border-bottom: 2px dashed #f7f7f7;
+    border-top: 1px dashed #f7f7f7;
+    border-bottom: 1px dashed #f7f7f7;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -78,19 +85,20 @@ html, body {
     font-weight: bold;
 }
 
+
 /* Main Content */
 .user-main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 75%; /* Adjusts relative to screen size */
+    width: 75%; /* Adjust width relative to screen size */
     min-width: 500px; /* Ensure minimum content width */
     background: #f7f7f7;
-    overflow-y: auto;
+    height: 100%; /* Set height to the full viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
     margin: 0;
     padding: 0;
 }
-
 /* Page Title */
 .user-main-pagetitle-container {
     top: 0;
@@ -121,6 +129,18 @@ html, body {
     padding: 1rem;
     border-radius: 8px;
     box-sizing: border-box;
+    height: 100%; /* Ensure the form takes full height of the container */
+}
+
+.usermain-content-standardform-form-input-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 1fr 1fr; /* Create two columns with equal width */
+    gap: 1rem; /* Add spacing between rows and columns */
+}
+
+.user-main-content-standardform-form-column {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
 }
 
 .user-main-content-standardform-form-input {
@@ -131,6 +151,7 @@ html, body {
     background: #f7f7f7;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 textarea {
@@ -144,6 +165,10 @@ textarea {
     min-height: 120px;
 }
 
+.user-main-content-standardform-form-row {
+    min-height: 70vh;
+}
+
 /* Buttons */
 .user-main-content-standardform-form-button-container-row {
     display: flex;
@@ -151,9 +176,11 @@ textarea {
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
+    flex-shrink: 0;
 }
 
 .user-main-content-standardform-button {
+    display: inline-block;
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
     text-align: center;
@@ -285,15 +312,13 @@ textarea {
 .user-main-content-21rowtable-container {
     margin-top: 10px;
     margin-bottom: 10px;
-    max-height: 550px;
-    overflow-y: auto; 
 }
 
 .user-main-content-21rowtable {
     width: 100%;
     border-collapse: collapse; /* Ensure borders are shared between cells */
     table-layout: auto;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .user-main-content-21rowtable th,
