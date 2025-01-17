@@ -134,7 +134,6 @@ html, body {
 
 .usermain-content-standardform-form-input-container {
     display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Create two columns with equal width */
     gap: 1rem; /* Add spacing between rows and columns */
 }
 
@@ -165,9 +164,7 @@ textarea {
     min-height: 120px;
 }
 
-.user-main-content-standardform-form-row {
-    min-height: 70vh;
-}
+
 
 /* Buttons */
 .user-main-content-standardform-form-button-container-row {
@@ -275,7 +272,6 @@ textarea {
 }
 
 .user-main-content-standardform-form-input {
-    padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
